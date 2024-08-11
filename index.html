@@ -6,80 +6,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vanilla App Template</title>
     
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <script type="module" crossorigin src="/Train-date-promice/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/Train-date-promice/assets/index-10c40100.css">
+    <link rel="modulepreload" crossorigin href="/Train-date-promice/assets/vendor-ad859c2f.js">
+    <link rel="stylesheet" href="/Train-date-promice/assets/vendor-e5212ee8.css">
+    <link rel="stylesheet" href="/Train-date-promice/assets/index-76dc9020.css">
   </head>
   <body>
-    <header class="header">
-  <nav class="nav">
-    <ul class="nav-list">
-      <li class="nav-item">
-        <a href="./page-2.html" class="nav-link">Page 2</a>
-      </li>
-
-      <li class="nav-item">
-        <a href="./page-3.html" class="nav-link">Page 3</a>
-      </li>
-    </ul>
-  </nav>
-</header>
-
-
-    <section>
-      <h1>Example page title</h1>
-      <!-- Path to images as from index.html file -->
-      <img src="/Train-date-promice/assets/javascript-8dac5379.svg" alt="" />
-    </section>
-
-    <!-- Loads the specified .html file -->
-    <section class="vite-promo">
-  <div class="container">
-    <div class="wrapper">
-      <h2 class="title">
-        <span class="gradient">Vite</span>
-      </h2>
-      <p class="text">Next Generation Frontend Tooling</p>
-      <p class="tagline">
-        Get ready for a development environment that can finally catch up with
-        you.
-      </p>
-
-      <ul class="actions">
-        <li class="action">
-          <a
-            class="link"
-            href="https://vitejs.dev/guide/"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Get Started</a
-          >
-        </li>
-        <li class="action">
-          <a
-            class="link"
-            href="https://github.com/vitejs/vite"
-            target="_blank"
-            rel="noopener noreferrer"
-            >View on GitHub</a
-          >
-        </li>
-      </ul>
-    </div>
-
-    <div class="thumb">
-      <!-- Path to images as from index.html file -->
-      <img
-        class="pic"
-        src="/Train-date-promice/assets/vite-logo-51249ca9.png"
-        alt="Vite logo"
-        width="640"
-        height="640"
-      />
-    </div>
-  </div>
-</section>
-
-
+    <header class="data-time-header">
+      <div class="container header-inner">
+        <ul class="date-container">
+          <li class="date_style data-yer-js"></li>
+          <li class="date_style data-month-js"></li>
+          <li class="date_style data-day-js"></li>
+        </ul>
+		<div class="caunt-seconds">
+			<button class="button-start-stop-js">Start</button>
+			<ul class="timer">
+				<li class="date_style hours-js">00</li>
+				<li class="date_style minutes-js">00</li>
+				<li class="date_style seconds-js">00</li>
+			</ul>
+		</div>
+		<div class="back-timer">
+			<div class="input-button-flex">
+				<input class="input-numbers-js" type="number" name="yourNumber" placeholder="seconds">
+				<button type="button" class="back-button-js">Start</button>
+			</div>
+			<ul class="back-timer-list">
+				<li class="date_style back-hours-js">00</li>
+				<li class="date_style back-minutes-js">00</li>
+				<li class="date_style back-seconds-js">00</li>
+			</ul>
+		</div>
+        <ul class="date-container">
+          <li class="date_style time-hours-js"></li>
+          <li class="date_style time-minutes-js"></li>
+          <li class="date_style time-seconds-js"></li>
+        </ul>
+      </div>
+    </header>
     
   </body>
 </html>
