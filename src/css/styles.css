@@ -5,13 +5,21 @@
   |============================
 */
 @import url('./reset.css');
+@import url('./timer.css');
+@import url('./data.css');
+@import url('./clock.css');
+@import url('./backTimer.css');
+@import url('./modalAdd.css');
 
 .container {
 	max-width: 1158px;
 	margin: 0 auto;
 	padding-left: 15px;
 	padding-right: 15px;
-  }
+}
+
+/* todo ~~~~~~~~START HEADER~~~~~~~ */
+
 
 .data-time-header{
 	background: -webkit-linear-gradient(90deg,#0c00ff,#9c00ff); background: linear-gradient(180deg,#0c00ff,#ff0000);
@@ -23,14 +31,8 @@
 	display: flex;
 	align-items: center;
 	justify-content:space-around;
-}
-
-.date-container{
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	gap: 10px;
-	min-width: 200px;
+	gap: 20px;
+	flex-wrap: wrap;
 }
 
 .date_style {
@@ -40,118 +42,6 @@
 	font-size: 36px;
 	min-width: 50px;
 }
-
-.data-yer-js{
-	position: relative;
-	margin-right: 5px;
-}
-
-.data-month-js{
-	position: relative;
-}
-
-.time-hours-js{
-	position: relative;
-}
-
-.time-minutes-js{
-	position: relative;
-}
-
-.data-yer-js::after{
-content: '-';
-position: absolute;
-font-size: 25px;
-top: 5px;
-left: 86px;
-}
-
-.data-month-js::after{
-	content: '-';
-	position: absolute;
-	font-size: 25px;
-	top: 5px;
-	left: 46px;
-}
-
-.time-hours-js::after{
-	content: ':';
-	position: absolute;
-	font-size: 25px;
-	top: 4px;
-	left: 48px;
-}
-
-.time-minutes-js::after{
-	content: ':';
-	position: absolute;
-	font-size: 25px;
-	top: 4px;
-	left: 48px;
-}
-
-.caunt-seconds{
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-direction: column;
-	gap: 5px;
-}
-
-.timer{
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	gap: 7px;
-}
-
-.button-start-stop-js{
-	margin-top: -23px;
-	background: -webkit-linear-gradient(180deg,#ff0f00,#ffec01); background: linear-gradient(180deg,#ff0f00,#ffec01);
-	font-family: "Kaushan Script", cursive;
-	color: rgb(32, 0, 111);
-	text-align: center;
-	font-weight: 600;
-	font-size: 36px;
-	padding: 5px 10px;
-	border-radius: 10px;
-	box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
-	min-width: 110px;
-	transition: transform 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
-}
-
-.button-start-stop-js:hover{
-	transform: scale(1.1);
-}
-
-.hours-js{
-	position: relative;
-}
-
-.minutes-js{
-	position: relative;
-}
-
-.hours-js::after{
-	content: ':';
-	position: absolute;
-	font-size: 25px;
-	top: 4px;
-	left: 50px;
-}
-
-.minutes-js::after{
-	content: ':';
-	position: absolute;
-	font-size: 25px;
-	top: 4px;
-	left: 50px;
-}
+/* todo ~~~~~~~~END HEADER~~~~~~~ */
 
 
-.back-timer-list{
-	display: flex;
-	align-items: center;
-	justify-content: flex-start;
-	gap: 7px;
-}

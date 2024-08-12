@@ -1,0 +1,31 @@
+.time-container{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+	min-width: 200px;
+}
+
+.time-hours-js{
+	position: relative;
+}
+
+.time-minutes-js{
+	position: relative;
+}
+
+.time-hours-js::after{
+	content: ':';
+	position: absolute;
+	font-size: 25px;
+	top: 4px;
+	left: 48px;
+}
+
+.time-minutes-js::after{
+	content: ':';
+	position: absolute;
+	font-size: 25px;
+	top: 4px;
+	left: 48px;
+}
