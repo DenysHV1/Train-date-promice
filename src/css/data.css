@@ -1,33 +1,32 @@
-.date-container{
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	gap: 10px;
-	min-width: 200px;
+.date-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-width: 200px;
 }
 
-.data-yer-js{
-	position: relative;
-	margin-right: 5px;
+.data-yer-js {
+  position: relative;
+  margin-right: 5px;
 }
 
-.data-month-js{
-	position: relative;
+.data-month-js {
+  position: relative;
 }
 
-.data-yer-js::after{
-content: '-';
-position: absolute;
-font-size: 25px;
-top: 5px;
-left: 86px;
+.data-yer-js::after {
+  content: '-';
+  position: absolute;
+  font-size: 25px;
+  top: 5px;
+  left: 86px;
 }
 
-.data-month-js::after{
-	content: '-';
-	position: absolute;
-	font-size: 25px;
-	top: 5px;
-	left: 46px;
+.data-month-js::after {
+  content: '-';
+  position: absolute;
+  font-size: 25px;
+  top: 5px;
+  left: 46px;
 }
-

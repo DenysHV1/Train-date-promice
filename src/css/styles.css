@@ -12,36 +12,49 @@
 @import url('./modalAdd.css');
 
 .container {
-	max-width: 1158px;
-	margin: 0 auto;
-	padding-left: 15px;
-	padding-right: 15px;
+  max-width: 1158px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@media (max-width: 420px) {
+  .container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .header-inner {
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 400px;
+  }
 }
 
 /* todo ~~~~~~~~START HEADER~~~~~~~ */
 
-
-.data-time-header{
-	background: -webkit-linear-gradient(90deg,#0c00ff,#9c00ff); background: linear-gradient(180deg,#0c00ff,#ff0000);
-	box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
-	padding: 15px 0;
+.data-time-header {
+  background: -webkit-linear-gradient(90deg, #0c00ff, #9c00ff);
+  background: linear-gradient(180deg, #0c00ff, #ff0000);
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  padding: 15px 0;
 }
 
-.header-inner{
-	display: flex;
-	align-items: center;
-	justify-content:space-around;
-	gap: 20px;
-	flex-wrap: wrap;
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
 .date_style {
-	font-family: "Kaushan Script", cursive;
-	color: aliceblue;
-	font-weight: 600;
-	font-size: 36px;
-	min-width: 50px;
+  font-family: 'Kaushan Script', cursive;
+  color: aliceblue;
+  font-weight: 600;
+  font-size: 36px;
+  min-width: 50px;
 }
 /* todo ~~~~~~~~END HEADER~~~~~~~ */
-
-

@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+    <title>Time is real</title>
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -16,34 +16,39 @@
   <body>
     <header class="data-time-header">
       <div class="container header-inner">
-		<!-- back-timer -->
-		<div class="back-timer">
-			<div class="input-button-flex">
-				<input class="input-numbers-js" type="number" name="yourNumber" placeholder="seconds">
-				<button type="button" class="back-button-js">Start</button>
-			</div>
-			<ul class="back-timer-list">
-				<li class="date_style back-hours-js">00</li>
-				<li class="date_style back-minutes-js">00</li>
-				<li class="date_style back-seconds-js">00</li>
-			</ul>
-		</div>
-		<!-- timer -->
-		<div class="caunt-seconds">
-			<button class="button-start-stop-js">Start</button>
-			<ul class="timer">
-				<li class="date_style hours-js">00</li>
-				<li class="date_style minutes-js">00</li>
-				<li class="date_style seconds-js">00</li>
-			</ul>
-		</div>
-		<!-- date -->
+        <!-- back-timer -->
+        <div class="back-timer">
+          <div class="input-button-flex">
+            <input
+              class="input-numbers-js"
+              type="number"
+              name="yourNumber"
+              placeholder="seconds"
+            />
+            <button type="button" class="back-button-js">Start</button>
+          </div>
+          <ul class="back-timer-list">
+            <li class="date_style back-hours-js">00</li>
+            <li class="date_style back-minutes-js">00</li>
+            <li class="date_style back-seconds-js">00</li>
+          </ul>
+        </div>
+        <!-- timer -->
+        <div class="caunt-seconds">
+          <button class="button-start-stop-js">Start</button>
+          <ul class="timer">
+            <li class="date_style hours-js">00</li>
+            <li class="date_style minutes-js">00</li>
+            <li class="date_style seconds-js">00</li>
+          </ul>
+        </div>
+        <!-- date -->
         <ul class="date-container">
           <li class="date_style data-yer-js"></li>
           <li class="date_style data-month-js"></li>
           <li class="date_style data-day-js"></li>
         </ul>
-		<!-- time -->
+        <!-- time -->
         <ul class="time-container">
           <li class="date_style time-hours-js"></li>
           <li class="date_style time-minutes-js"></li>
@@ -52,11 +57,18 @@
       </div>
     </header>
     <script type="module" src="./main.js"></script>
-	<div class="modal-add-js">
-		<div class="add-content">
-			<p class="text-add">Можете закрити рекламу через <span class="add-counter-js"></span></p>
-			<a class="instagram-link" href="#">Subscribe</a>
-		</div>
-	</div>
+    <div class="modal-add-js">
+      <div class="add-content">
+        <a
+          class="instagram-link"
+          href="https://www.instagram.com/denvik_i/"
+          target="_blank"
+          >Subscribe</a
+        >
+        <p class="text-add">
+          Можете закрити рекламу через <span class="add-counter-js"></span>
+        </p>
+      </div>
+    </div>
   </body>
 </html>
