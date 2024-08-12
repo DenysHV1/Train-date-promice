@@ -15,24 +15,12 @@
     <script type="module" crossorigin src="/Train-date-promice/commonHelpers.js"></script>
     <link rel="modulepreload" crossorigin href="/Train-date-promice/assets/vendor-ad859c2f.js">
     <link rel="stylesheet" href="/Train-date-promice/assets/vendor-e5212ee8.css">
-    <link rel="stylesheet" href="/Train-date-promice/assets/index-76dc9020.css">
+    <link rel="stylesheet" href="/Train-date-promice/assets/index-386df8e3.css">
   </head>
   <body>
     <header class="data-time-header">
       <div class="container header-inner">
-        <ul class="date-container">
-          <li class="date_style data-yer-js"></li>
-          <li class="date_style data-month-js"></li>
-          <li class="date_style data-day-js"></li>
-        </ul>
-		<div class="caunt-seconds">
-			<button class="button-start-stop-js">Start</button>
-			<ul class="timer">
-				<li class="date_style hours-js">00</li>
-				<li class="date_style minutes-js">00</li>
-				<li class="date_style seconds-js">00</li>
-			</ul>
-		</div>
+		<!-- back-timer -->
 		<div class="back-timer">
 			<div class="input-button-flex">
 				<input class="input-numbers-js" type="number" name="yourNumber" placeholder="seconds">
@@ -44,7 +32,23 @@
 				<li class="date_style back-seconds-js">00</li>
 			</ul>
 		</div>
+		<!-- timer -->
+		<div class="caunt-seconds">
+			<button class="button-start-stop-js">Start</button>
+			<ul class="timer">
+				<li class="date_style hours-js">00</li>
+				<li class="date_style minutes-js">00</li>
+				<li class="date_style seconds-js">00</li>
+			</ul>
+		</div>
+		<!-- date -->
         <ul class="date-container">
+          <li class="date_style data-yer-js"></li>
+          <li class="date_style data-month-js"></li>
+          <li class="date_style data-day-js"></li>
+        </ul>
+		<!-- time -->
+        <ul class="time-container">
           <li class="date_style time-hours-js"></li>
           <li class="date_style time-minutes-js"></li>
           <li class="date_style time-seconds-js"></li>
@@ -52,5 +56,11 @@
       </div>
     </header>
     
+	<div class="modal-add-js">
+		<div class="add-content">
+			<p class="text-add">Можете закрити рекламу через <span class="add-counter-js"></span></p>
+			<a class="instagram-link" href="#">Subscribe</a>
+		</div>
+	</div>
   </body>
 </html>
