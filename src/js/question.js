@@ -3,6 +3,7 @@ export function choiceCorrectAnswer() {
   const resultAnswer = document.querySelector('.result-answer-js');
   let incorrectClicks = 0;
   resultAnswer.style.display = 'none';
+  
   function setMarkupButtons() {
     let counter = 0;
     let result = '';

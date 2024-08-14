@@ -18,5 +18,5 @@ mainFunkTimer();
 import { add } from './js/add.js';
 add();
 
-import {choiceCorrectAnswer} from './js/question.js'
+import { choiceCorrectAnswer } from './js/question.js'
 choiceCorrectAnswer();
