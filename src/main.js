@@ -24,13 +24,11 @@ let incorrectClicks = 0;
 resultAnswer.style.display = 'none';
 
 function setMarkupButtons() {
-  let counter = 0;
-  let result = '';
-  for (let i = 1; i <= 32; i += 1) {
-	counter += 1;
-	result += `<button class="answer-from-js" type="submit" data-id="${counter}">${counter}</button>`;
-  }
-  return result;
+	const arr = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32]
+	let result = '';
+
+	return arr.map((item) => result + `<button class="answer-from-js" type="submit" data-id="${item}">${item}</button>`).join('');
+
 }
 answersList.insertAdjacentHTML('afterbegin', setMarkupButtons());
 
