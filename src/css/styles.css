@@ -10,6 +10,7 @@
 @import url('./clock.css');
 @import url('./backTimer.css');
 @import url('./modalAdd.css');
+@import url('./question.css');
 
 .container {
   max-width: 1158px;
@@ -31,6 +32,10 @@
     justify-content: space-between;
     min-height: 400px;
   }
+
+  .answer-from-js{
+	width: calc((100% - 40px) / 5);
+}
 }
 
 /* todo ~~~~~~~~START HEADER~~~~~~~ */
