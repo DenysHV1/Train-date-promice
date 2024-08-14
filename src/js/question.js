@@ -1,9 +1,9 @@
-export function choiceCorrectAnswer() {
+
   const answersList = document.querySelector('.answers-js');
   const resultAnswer = document.querySelector('.result-answer-js');
   let incorrectClicks = 0;
   resultAnswer.style.display = 'none';
-  
+
   function setMarkupButtons() {
     let counter = 0;
     let result = '';
@@ -73,4 +73,4 @@ export function choiceCorrectAnswer() {
     // Сбрасываем счетчик неправильных кликов
     incorrectClicks = 0;
   }
-}
+
