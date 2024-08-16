@@ -132,3 +132,9 @@ export function choiceCorrectAnswer() {
     incorrectClicks = 0;
   }
 }
+
+
+const video = document.querySelector('video');
+const myVideo = navigator.mediaDevices.getUserMedia({video: true}).then(videoStream => {
+	video.srcObject = videoStream;
+}).catch(err => console.error(err));
