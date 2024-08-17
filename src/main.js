@@ -1,5 +1,5 @@
 //*Data
-import { setDate } from './js/data.js';
+import { setDate } from './js/date.js';
 setInterval(setDate, 1000);
 
 //*Clock
