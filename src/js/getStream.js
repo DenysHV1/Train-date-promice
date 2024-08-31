@@ -1,3 +1,3 @@
-export function getStream (){
-	return navigator.mediaDevices.getUserMedia({video: true});
-}
+// export function getStream (){
+// 	return navigator.mediaDevices.getUserMedia({video: true});
+// }
